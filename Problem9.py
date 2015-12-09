@@ -11,7 +11,6 @@ def getfactorpairs(r, n): # generate pythagorean triples based on seed r
 
 def findabc(n):  # n is the number in which a + b + c = n
     r = 2
-    comparisons = 0
     while len(getfactorpairs(r, n)) > 0:
         f = getfactorpairs(r, n)
         for i in f:  # uses every seed
